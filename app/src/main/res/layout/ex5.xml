@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- EditText để nhập số phần tử mảng -->
+    <EditText
+        android:id="@+id/edtArraySize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số phần tử mảng"
+        android:inputType="number"
+    android:padding="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="80dp"
+    android:textSize="16sp"
+    android:textColor="#000"/>
+
+    <!-- Button để thực hiện tính toán -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tính các số chính phương"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+    app:layout_constraintTop_toBottomOf="@id/edtArraySize"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="40dp"
+    android:padding="12dp"/>
+
+    <!-- TextView để hiển thị kết quả -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+    app:layout_constraintTop_toBottomOf="@id/btnCalculate"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="40dp"
+    android:padding="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
